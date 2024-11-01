@@ -1,0 +1,103 @@
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+             font-family: Arial, sans-serif;
+    }
+
+    header {
+        background-color: #ffffff;
+        padding: 10px 0;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu {
+        max-width: 1400px;
+        padding: 20px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo img {
+        width: 250px; /* Adjust width as needed */
+    }
+
+    .menu ul {
+        list-style: none;
+        font-size: 20px;
+        display: flex;
+        gap: 75px; /* Spacing between menu items */
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        color: #646869;
+    }
+
+    .menu ul li a:hover {
+        color: black; /* Hover color */
+    }
+
+    /* Hamburger Button Styles */
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 4px;
+    }
+
+    .hamburger span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: #646869;
+    }
+
+    /* Responsive Menu */
+    @media (max-width: 768px) {
+        .menu ul {
+            display: none; /* Hide menu by default */
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+            background-color: #ffffff;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 60px;
+            right: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .menu ul.show {
+            display: flex; /* Show menu when active */
+        }
+
+        .hamburger {
+            display: flex;
+        }
+
+         .logo img {
+        width: 200px; /* Adjust width as needed */
+    }
+.nav-menu {
+    max-width: 1400px;
+    padding: 20px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    }
+
+
+
+
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .banner-content {
+                font-size: 1.5em;
+                padding: 0 10px;
+            }
+        }
